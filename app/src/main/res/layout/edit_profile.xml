@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".edit_profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Edit akun"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--    NAME EDIT FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="34dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/namefield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/nametxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    TEMPAT TANGGAL LAHIR FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ttltxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat/Tanggal lahir: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ttlfield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/ttltxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    TEMPAT NISN LAHIR FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nisntxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="NISN/NIS: "
+                    android:textFontWeight="700"
+                    android:textSize="18sp" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nisnfield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/nisntxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    KELAS FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/kelastxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kelasfield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/kelastxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    Institusi FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/institusitxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Institusi: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/institusifield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/institusitxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    EMAIL FIELD-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/emailtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/emailfield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/emailtxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!--    NOMOR HP FIELD-->
+            <RelativeLayout
+                android:id="@+id/nohp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nohptxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor HP: "
+                    android:textSize="18sp"
+                    android:textFontWeight="700"
+                    android:layout_marginLeft="24dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nohpfield"
+                    android:layout_width="364dp"
+                    android:layout_height="45dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_below="@+id/nohptxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Simpan"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:elevation="6dp"
+                android:onClick="simpan"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
