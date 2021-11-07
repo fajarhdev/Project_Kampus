@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Kampus">
-        <activity android:name=".profile" />
+        <activity android:name=".profile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".edit_profile"
+            android:parentActivityName=".profile"/>
+        <activity
+            android:name=".pusat_bantuan"
+            android:parentActivityName=".profile"/>
     </application>
 
 </manifest>

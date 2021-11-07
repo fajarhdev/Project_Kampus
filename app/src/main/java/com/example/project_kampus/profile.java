@@ -1,5 +1,6 @@
 package com.example.project_kampus;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -39,72 +40,46 @@ public class profile extends AppCompatActivity {
         btnbahasa = findViewById(R.id.pilihbahas);
         btnbantuan = findViewById(R.id.bantuan);
 
+//      button edit profile
+        btneditprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), edit_profile.class);
+                startActivity(i);
+            }
+        });
+
+//      button riwayat
+//        btnriwayat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(), riwayat.class);
+//                startActivity(i);
+//            }
+//        });
+
+//      button bahasa
+//        btnbahasa.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(), bahasa.class);
+//                startActivity(i);
+//            }
+//        });
+
+//      button bantuan
+        btnbantuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), pusat_bantuan.class);
+                startActivity(i);
+            }
+        });
     }
 
-    private void getProfileDetail(String userId) {
+//    buat konek db disini
 
-        // url to post our data
-        String url = "http://localhost/courseApp/readCourses.php";
 
-        // creating a new variable for our request queue
-        RequestQueue queue = Volley.newRequestQueue(profile.this);
 
-        // on below line we are calling a string
-        // request method to post the data to our API
-        // in this we are calling a post method.
-        StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    // on below line passing our response to json object.
-                    JSONObject jsonObject = new JSONObject(response);
-                    // on below line we are checking if the response is null or not.
-                    if (jsonObject.getString("uid") == null) {
-                        // displaying a toast message if we get error
-                        Toast.makeText(profile.this, "Please enter valid id.", Toast.LENGTH_SHORT).show();
-                    } else {
-                        // if we get the data then we are setting it in our text views in below line.
-                        txtname.setText(jsonObject.getString("..."));
-                        txtemail.setText(jsonObject.getString("..."));
-                        txtstatus.setText(jsonObject.getString("..."));
-//                        courseCV.setVisibility(View.VISIBLE);
-                    }
-                    // on below line we are displaying
-                    // a success toast message.
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new com.android.volley.Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                // method to handle errors.
-                Toast.makeText(MainActivity.this, "Fail to get course" + error, Toast.LENGTH_SHORT).show();
-            }
-        }) {
-            @Override
-            public String getBodyContentType() {
-                // as we are passing data in the form of url encoded
-                // so we are passing the content type below
-                return "application/x-www-form-urlencoded; charset=UTF-8";
-            }
-
-            @Override
-            protected Map<String, String> getParams() {
-
-                // below line we are creating a map for storing our values in key and value pair.
-                Map<String, String> params = new HashMap<String, String>();
-
-                // on below line we are passing our key and value pair to our parameters.
-                params.put("id", courseId);
-
-                // at last we are returning our params.
-                return params;
-            }
-        };
-        // below line is to make
-        // a json object request.
-        queue.add(request);
-    }
 }
-}
+
