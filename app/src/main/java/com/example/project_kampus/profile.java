@@ -50,22 +50,22 @@ public class profile extends AppCompatActivity {
         });
 
 //      button riwayat
-//        btnriwayat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getApplicationContext(), riwayat.class);
-//                startActivity(i);
-//            }
-//        });
+        btnriwayat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), history.class);
+                startActivity(i);
+            }
+        });
 
 //      button bahasa
-//        btnbahasa.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getApplicationContext(), bahasa.class);
-//                startActivity(i);
-//            }
-//        });
+        btnbahasa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), bahasa.class);
+                startActivity(i);
+            }
+        });
 
 //      button bantuan
         btnbantuan.setOnClickListener(new View.OnClickListener() {
