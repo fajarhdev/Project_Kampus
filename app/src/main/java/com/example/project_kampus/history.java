@@ -1,4 +1,4 @@
-package com.example.project_quiz;
+package com.example.project_kampus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
