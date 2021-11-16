@@ -26,9 +26,10 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/circle"
             android:layout_marginLeft="185dp"
-            android:text="Button"/>
+            android:background="@drawable/circle"
+            android:layout_gravity="center"
+            android:text="Button" />
 
     </LinearLayout>
 
