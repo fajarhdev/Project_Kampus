@@ -1,0 +1,122 @@
+[
+  {
+    "sid": "2",
+    "isi": "Apa kompleksitas waktu kasus terburuk dari algoritma pencarian linier?",
+    "pil": {
+      "a": "(1)",
+      "b": "(log n)",
+      "c": "(n2)"
+    },
+    "jb": "2",
+    "wk": "25",
+    "ss": "5"
+  },
+  {
+    "sid": "3",
+    "isi": "Struktur data apa yang digunakan untuk depth first traversal dari graf?",
+    "pil": {
+      "a": "Tumpukan",
+      "b": "Daftar",
+      "c": "Antre"
+    },
+    "jb": "0",
+    "wk": "20",
+    "ss": "5"
+  },
+  {
+    "sid": "4",
+    "isi": "Manakah dari berikut ini yang merupakan contoh pendekatan pemrograman dinamis?",
+    "pil": {
+      "a": "Seri Fibonacci",
+      "b": "Menara Hanoi",
+      "c": "Semua yang di atas"
+    },
+    "jb": "2",
+    "wk": "15",
+    "ss": "5"
+  },
+  {
+    "sid": "15",
+    "isi": "Manakah dari teknik pencarian berikut yang tidak memerlukan data dalam bentuk terurut?",
+    "pil": {
+      "a": "Pencarian Linier",
+      "b": "Pencarian Biner",
+      "c": "Pencarian Interpolasi"
+    },
+    "jb": "1",
+    "wk": "10",
+    "ss": "5"
+  },
+  {
+    "sid": "16",
+    "isi": "Setelah setiap iterasi dalam bubble sort?",
+    "pil": {
+      "a": "satu perbandingan lebih sedikit dibuat pada iterasi berikutnya",
+      "b": "setidaknya satu elemen berada pada posisi terurutnya",
+      "c": "Kedua A & B benar"
+    },
+    "jb": "1",
+    "wk": "25",
+    "ss": "5"
+  },
+  {
+    "sid": "17",
+    "isi": "Banyaknya pohon biner dengan 3 simpul yang bila dilintasi secara post order menghasilkan barisan A,B,C adalah?",
+    "pil": {
+      "a": "5",
+      "b": "3",
+      "c": "4"
+    },
+    "jb": "0",
+    "wk": "30",
+    "ss": "5"
+  },
+  {
+    "sid": "18",
+    "isi": "Jika antrian diimplementasikan menggunakan array, apa kompleksitas runtime terburuk dari operasi antrian dan dequeue?",
+    "pil": {
+      "a": "(n), (1)",
+      "b": "(n), (n)",
+      "c": "(1), (1)"
+    },
+    "jb": "2",
+    "wk": "30",
+    "ss": "5"
+  },
+  {
+    "sid": "19",
+    "isi": "Semua pohon merentang yang mungkin dari graf G?",
+    "pil": {
+      "a": "tergantung pada algoritma yang digunakan",
+      "b": "memiliki jumlah rusuk dan simpul yang sama",
+      "c": "memiliki jumlah simpul yang sama tetapi tidak memiliki tepi"
+    },
+    "jb": "1",
+    "wk": "20",
+    "ss": "5"
+  },
+  {
+    "sid": "20",
+    "isi": "Jika kita memilih Algoritma Prim untuk pohon rentang berbobot unik daripada Algoritma Kruskal, maka?",
+    "pil": {
+      "a": "kita akan mendapatkan pohon merentang yang sama",
+      "b": "spanning akan memiliki tepi yang lebih sedikit",
+      "c": "kita akan mendapatkan pohon rentang yang berbeda"
+    },
+    "jb": "0",
+    "wk": "15",
+    "ss": "5"
+  },
+  {
+    "sid": "21",
+    "isi": "Kompleksitas kasus terburuk dari pencarian biner cocok dengan?",
+    "pil": {
+      "a": "pencarian interpolasi",
+      "b": "pencarian linier",
+      "c": "menggabungkan semacam"
+    },
+    "jb": "1",
+    "wk": "10",
+    "ss": "5"
+  }
+]

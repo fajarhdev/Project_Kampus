@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.project_kampus">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Kampus">
-        <activity android:name=".home_screen">
+        <activity android:name=".login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,24 +21,55 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".home_screen"
+            android:exported="true"/>
+
         <activity
             android:name=".ScoreActivity"
+            android:exported="true"
             android:parentActivityName=".home_screen"/>
         <activity
             android:name=".profile"
+            android:exported="true"
             android:parentActivityName=".home_screen"/>
         <activity
             android:name=".edit_profile"
+            android:exported="true"
             android:parentActivityName=".profile"/>
         <activity
             android:name=".history"
+            android:exported="true"
             android:parentActivityName=".profile"/>
         <activity
             android:name=".bahasa"
+            android:exported="true"
             android:parentActivityName=".profile"/>
         <activity
             android:name=".pusat_bantuan"
+            android:exported="true"
             android:parentActivityName=".profile"/>
+        <activity
+            android:name=".paket"
+            android:exported="true"/>
+        <activity
+            android:name=".prequiz"
+            android:exported="true"/>
+        <activity
+            android:name=".quiz"
+            android:exported="true"/>
+        <activity
+            android:name=".voice"
+            android:exported="true"/>
+        <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
+            android:name=".nav"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
     </application>
 
 </manifest>
