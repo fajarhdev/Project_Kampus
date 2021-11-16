@@ -29,7 +29,7 @@ public class edit_profile extends AppCompatActivity {
         String[] data;
         String id = "A";//Id pengenal
 
-        nama = findViewById(R.id.nama);
+        nama = findViewById(R.id.namefield);
         ttl = findViewById(R.id.ttlfield);
         nisn = findViewById(R.id.nisnfield);
         kelas = findViewById(R.id.kelasfield);

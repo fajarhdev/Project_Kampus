@@ -45,3 +45,5 @@ public class nav extends AppCompatActivity {
 
  */
 }
+
+// TODO: 16/11/2021 create and continue the navigation creation in the bottom nav bar
