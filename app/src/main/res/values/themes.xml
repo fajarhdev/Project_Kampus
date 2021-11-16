@@ -15,13 +15,13 @@
         <item name="android:navigationBarColor">#000000</item>
     </style>
 
-    <style name="Theme.ProjectQuiz.NavBar">
+    <style name="Theme.Project_Kampus.NavBar">
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/blue3</item>
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
-    <style name="Theme.ProjectQuiz.NoActionBar">
+    <style name="Theme.Project_Kampus.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
