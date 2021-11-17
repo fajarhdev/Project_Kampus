@@ -1,86 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home_screen"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/topbar"
-        android:layout_width="414dp"
-        android:layout_height="70dp"
-        android:background="@color/blue"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aplikasi"
-            android:textColor="@color/white"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="28dp"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="185dp"
-            android:background="@drawable/circle"
-            android:layout_gravity="center"
-            android:text="Button" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/menubar"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="464dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
-        <SearchView
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:background="@drawable/corner_rec"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="20dp"/>
+    </androidx.recyclerview.widget.RecyclerView>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:background="@drawable/corner_rec"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="20dp"
-            android:text="Button"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:background="@drawable/corner_rec"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="20dp"
-            android:text="Button"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:background="@drawable/corner_rec"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="20dp"
-            android:text="Button"/>
-
-    </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottombar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/blue"
-        android:orientation="horizontal"
-        app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white"
-        app:menu="@menu/bottom_nav"/>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/addET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="REMOVE" />
+
+        <EditText
+            android:id="@+id/remET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
 
 </LinearLayout>

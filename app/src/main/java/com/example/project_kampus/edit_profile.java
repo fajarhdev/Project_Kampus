@@ -29,6 +29,8 @@ public class edit_profile extends AppCompatActivity {
         String[] data;
         String id = "A";//Id pengenal
 
+
+// TODO: 17/11/2021 ini salah, yg di ambil cardiview, harusnya edittext
         nama = findViewById(R.id.namefield);
         ttl = findViewById(R.id.ttlfield);
         nisn = findViewById(R.id.nisnfield);
