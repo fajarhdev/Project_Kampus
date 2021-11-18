@@ -38,7 +38,7 @@ public class profile extends AppCompatActivity {
     private CardView btneditprofile, btnriwayat, btnbahasa, btnbantuan;
     private AppCompatImageView profilepict;
     private GoogleSignInClient mgs;
-    public static String JSON_URL = "http://192.168.100.29/project_kampus/index.php";
+//    public static String JSON_URL = "http://192.168.100.29/project_kampus/index.php";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +112,7 @@ public class profile extends AppCompatActivity {
             txtemail.setText(personEmail);
             txtstatus.setText((personId));
 
-            Glide.with(this).load(String.valueOf(personPhoto)).into(profilepict);
+            Glide.with(this).load(String.valueOf(personPhoto)).circleCrop().into(profilepict);
         }
     }
 

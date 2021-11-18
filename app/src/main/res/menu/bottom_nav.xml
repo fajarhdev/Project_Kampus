@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Home" android:icon="@drawable/ic_home" />
-    <item android:title="Subject" android:icon="@drawable/ic_book"/>
-    <item android:title="Settings" android:icon="@drawable/ic_settings"/>
+    <item
+        android:id="@+id/homefragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/scorefragment"
+        android:icon="@drawable/ic_book"
+        android:title="Subject" />
+    <item
+        android:id="@+id/profilefragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
 </menu>
