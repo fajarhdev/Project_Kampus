@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Ardi Azizi PC/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/home_screen.xml" value="0.176" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/drawable/botton_nav_icon_selector.xml" value="0.290625" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/drawable/corner_rec.xml" value="0.290625" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/drawable/ic_baseline_account_circle_36.xml" value="0.290625" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/drawable/ic_baseline_help_36.xml" value="0.290625" />
@@ -18,16 +19,18 @@
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/activity_prequiz.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/activity_quiz.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/activity_score.xml" value="0.25" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/activity_voice.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/edit_profile.xml" value="0.176" />
-        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/fragment_homefragment.xml" value="0.4" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/fragment_homefragment.xml" value="0.264" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/fragment_profilefragment.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/fragment_scorefragment.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/home.xml" value="0.4218512898330804" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/home.xml" value="0.2" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/home_screen.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/login.xml" value="0.4" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/login.xml" value="0.264" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/mew_profile.xml" value="0.264" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/nav.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/new_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/paket.xml" value="0.17804054054054055" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/profile.xml" value="0.2" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/pusat_bantuan.xml" value="0.264" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/sirfile.xml" value="0.27447916666666666" />

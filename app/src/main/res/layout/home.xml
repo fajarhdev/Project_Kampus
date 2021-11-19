@@ -18,11 +18,13 @@
         app:navGraph="@navigation/navbottom" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:theme="@style/Theme.Project_Kampus.NavBar"
         android:id="@+id/bottomnav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@color/blue4"
+        app:itemRippleColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
