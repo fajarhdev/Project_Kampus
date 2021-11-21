@@ -81,37 +81,37 @@ public class home_screen extends AppCompatActivity{
         inputlist();
         buildRecyclerMethod();
 
-        buttonAdd = findViewById(R.id.add);
-        buttonRem = findViewById(R.id.rem);
-        etAdd = findViewById(R.id.addET);
-        etRem = findViewById(R.id.remET);
+//        buttonAdd = findViewById(R.id.add);
+//        buttonRem = findViewById(R.id.rem);
+//        etAdd = findViewById(R.id.addET);
+//        etRem = findViewById(R.id.remET);
 
-        buttonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = Integer.parseInt(etAdd.getText().toString());
-                insertItem(position);
-            }
-        });
-
-        buttonRem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int position = Integer.parseInt(etRem.getText().toString());
-                removeItem(position);
-            }
-        });
+//        buttonAdd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                int position = Integer.parseInt(etAdd.getText().toString());
+//                insertItem(position);
+//            }
+//        });
+//
+//        buttonRem.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                int position = Integer.parseInt(etRem.getText().toString());
+//                removeItem(position);
+//            }
+//        });
     }
 
-    public void insertItem(int position){
-        list.add(position, new Subject(Integer.toString(R.drawable.mike),"Suboo","lalala","Boi"));
-        adapter.notifyItemInserted(position);
-    }
+//    public void insertItem(int position){
+//        list.add(position, new Subject(Integer.toString(R.drawable.mike),"Suboo","lalala","Boi"));
+//        adapter.notifyItemInserted(position);
+//    }
 
-    public void removeItem(int position){
-        list.remove(position);
-        adapter.notifyItemRemoved(position);
-    }
+//    public void removeItem(int position){
+//        list.remove(position);
+//        adapter.notifyItemRemoved(position);
+//    }
 
     public void changeItem(int position, String text){
         list.get(position).changeText(text);

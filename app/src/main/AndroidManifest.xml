@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Kampus">
         <activity
-            android:name=".home"
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,45 +22,45 @@
             </intent-filter>
         </activity>
 
-<!--        <activity android:name=".home_screen"-->
-<!--            android:exported="true"/>-->
+        <activity android:name=".home"
+            android:exported="true"/>
 
-<!--        <activity-->
-<!--            android:name=".ScoreActivity"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".home_screen"/>-->
-<!--        <activity-->
-<!--            android:name=".profile"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".home_screen"/>-->
-<!--        <activity-->
-<!--            android:name=".edit_profile"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".profile"/>-->
-<!--        <activity-->
-<!--            android:name=".history"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".profile"/>-->
-<!--        <activity-->
-<!--            android:name=".bahasa"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".profile"/>-->
-<!--        <activity-->
-<!--            android:name=".pusat_bantuan"-->
-<!--            android:exported="true"-->
-<!--            android:parentActivityName=".profile"/>-->
-<!--        <activity-->
-<!--            android:name=".paket"-->
-<!--            android:exported="true"/>-->
-<!--        <activity-->
-<!--            android:name=".prequiz"-->
-<!--            android:exported="true"/>-->
-<!--        <activity-->
-<!--            android:name=".quiz"-->
-<!--            android:exported="true"/>-->
-<!--        <activity-->
-<!--            android:name=".voice"-->
-<!--            android:exported="true"/>-->
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="true"
+            android:parentActivityName=".home"/>
+        <activity
+            android:name=".profile"
+            android:exported="true"
+            android:parentActivityName=".home"/>
+        <activity
+            android:name=".edit_profile"
+            android:exported="true"
+            android:parentActivityName=".profile"/>
+        <activity
+            android:name=".history"
+            android:exported="true"
+            android:parentActivityName=".profile"/>
+        <activity
+            android:name=".bahasa"
+            android:exported="true"
+            android:parentActivityName=".profile"/>
+        <activity
+            android:name=".pusat_bantuan"
+            android:exported="true"
+            android:parentActivityName=".profile"/>
+        <activity
+            android:name=".paket"
+            android:exported="true"/>
+        <activity
+            android:name=".prequiz"
+            android:exported="true"/>
+        <activity
+            android:name=".quiz"
+            android:exported="true"/>
+        <activity
+            android:name=".voice"
+            android:exported="true"/>
 <!--        <activity-->
 <!--            android:name=".home"-->
 <!--            android:exported="true" />-->
