@@ -7,31 +7,31 @@
     android:orientation="vertical"
     tools:context=".history">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#111B56" >
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:background="#111B56" >-->
 
-        <ImageButton
-            android:id="@+id/arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="7dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/arrow"
-            tools:ignore="ContentDescription" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/arrow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/arrow"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Riwayat Pelajaran"
-            android:textColor="@color/white"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="20dp" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Riwayat Pelajaran"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textSize="20dp" />-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
     <ScrollView
         android:layout_width="match_parent"

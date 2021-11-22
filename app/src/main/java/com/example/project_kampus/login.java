@@ -64,7 +64,7 @@ public class login extends AppCompatActivity {
     }
 
     private void updateUI(GoogleSignInAccount account) {
-        Intent startExistSignIn = new Intent(this, profile.class);
+        Intent startExistSignIn = new Intent(this, home.class);
         startActivity(startExistSignIn);
     }
 

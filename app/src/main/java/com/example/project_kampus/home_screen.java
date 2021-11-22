@@ -56,18 +56,18 @@ public class home_screen extends AppCompatActivity{
         }catch (IOException e){
             e.printStackTrace();
         }
-//        Gson gson = new Gson();
-//        subjects = gson.fromJson(s,Subject[].class);
+        Gson gson = new Gson();
+        subjects = gson.fromJson(s,Subject[].class);
     }
 
-//    private void inputlist(){
-//        list = new ArrayList<>();
-//        int i = 0;
-//        while(i< subjects.length){
-//            list.add(subjects[i]);
-//            i++;
-//        }
-//    }
+    private void inputlist(){
+        list = new ArrayList<>();
+        int i = 0;
+        while(i< subjects.length){
+            list.add(subjects[i]);
+            i++;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,29 +78,29 @@ public class home_screen extends AppCompatActivity{
         StrictMode.setThreadPolicy(policy);
 
         getlist();
-//        inputlist();
-//        buildRecyclerMethod();
+        inputlist();
+        buildRecyclerMethod();
 
         buttonAdd = findViewById(R.id.add);
-//        buttonRem = findViewById(R.id.rem);
-//        etAdd = findViewById(R.id.addET);
-//        etRem = findViewById(R.id.remET);
+        buttonRem = findViewById(R.id.rem);
+        etAdd = findViewById(R.id.addET);
+        etRem = findViewById(R.id.remET);
 
-//        buttonAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int position = Integer.parseInt(etAdd.getText().toString());
-//                insertItem(position);
-//            }
-//        });
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = Integer.parseInt(etAdd.getText().toString());
+                insertItem(position);
+            }
+        });
 
-//        buttonRem.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int position = Integer.parseInt(etRem.getText().toString());
-//                removeItem(position);
-//            }
-//        });
+        buttonRem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = Integer.parseInt(etRem.getText().toString());
+                removeItem(position);
+            }
+        });
     }
 
     public void insertItem(int position){
@@ -133,23 +133,23 @@ public class home_screen extends AppCompatActivity{
         startActivity(intent);
     }
 
-//    public void buildRecyclerMethod(){
-//        recyclerView = findViewById(R.id.recyclerView);
-//        recyclerView.setHasFixedSize(true);
-//        layoutManager = new LinearLayoutManager(this);
-//        adapter = new subjectAdapter(list);
-//
-//        recyclerView.setLayoutManager(layoutManager);
-//        recyclerView.setAdapter(adapter);
-//
-//        adapter.setOnItemClickListener(new subjectAdapter.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(int position) {
-//                changeItem(position,"HOHOHOOO");
-//                gotopaket(position);
-//            }
-//        });
-//    }
+    public void buildRecyclerMethod(){
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        adapter = new subjectAdapter(list);
+
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+
+        adapter.setOnItemClickListener(new subjectAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                changeItem(position,"HOHOHOOO");
+                gotopaket(position);
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu) {

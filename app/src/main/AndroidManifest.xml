@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.project_kampus">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -15,83 +11,65 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_Kampus"
-        android:usesCleartextTraffic="true">
-        <activity
-            android:name=".home_screen"
-            android:exported="false" />
-        <activity
-            android:name=".cobadownload"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat">
+        android:theme="@style/Theme.Project_Kampus">
+        <activity android:name=".login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".login"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+
+        <activity android:name=".home_screen"
+            android:exported="true"/>
+
         <activity
             android:name=".ScoreActivity"
             android:exported="true"
-            android:parentActivityName=".home_screen"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".home_screen"/>
         <activity
             android:name=".profile"
             android:exported="true"
-            android:parentActivityName=".home_screen"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".home_screen"/>
         <activity
             android:name=".edit_profile"
             android:exported="true"
-            android:parentActivityName=".profile"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".profile"/>
         <activity
             android:name=".history"
             android:exported="true"
-            android:parentActivityName=".profile"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".profile"/>
         <activity
             android:name=".bahasa"
             android:exported="true"
-            android:parentActivityName=".profile"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".profile"/>
         <activity
             android:name=".pusat_bantuan"
             android:exported="true"
-            android:parentActivityName=".profile"
-            android:theme="@style/Theme.AppCompat" />
+            android:parentActivityName=".profile"/>
         <activity
             android:name=".paket"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true"/>
         <activity
             android:name=".prequiz"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true"/>
         <activity
             android:name=".quiz"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true"/>
         <activity
             android:name=".voice"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true"/>
         <activity
             android:name=".home"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true" />
         <activity
             android:name=".nav"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat" />
+            android:exported="true"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:value="@integer/google_play_services_version"/>
     </application>
 
 </manifest>

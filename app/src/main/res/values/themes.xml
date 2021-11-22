@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ProjectQuiz" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Project_Kampus" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue4</item>
         <item name="colorPrimaryVariant">@color/blue3</item>
@@ -15,12 +15,14 @@
         <item name="android:navigationBarColor">#000000</item>
     </style>
 
+<!--    custom navbar style-->
     <style name="Theme.Project_Kampus.NavBar">
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/blue3</item>
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
+<!--    -->
     <style name="Theme.Project_Kampus.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
