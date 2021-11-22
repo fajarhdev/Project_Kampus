@@ -27,10 +27,24 @@
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/pusat_bantuan.xml" value="0.264" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/layout/sirfile.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/FAJAR/AndroidStudioProjects/Project_Kampus/app/src/main/res/mipmap-anydpi-v26/ic_illustration_login__362.xml" value="0.290625" />
+        <entry key="app/src/main/res/drawable/corner_rec.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/activity_bahasa.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_cobadownload.xml" value="0.4466666666666667" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_paket.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_prequiz.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_score.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_screen.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/nav.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/pusat_bantuan.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/subject.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/search_menu.xml" value="0.146875" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
