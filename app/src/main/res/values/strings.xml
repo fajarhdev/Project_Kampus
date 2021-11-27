@@ -13,6 +13,13 @@
     <string name="nomor_hp">Nomor HP:</string>
     <string name="simpan">Simpan</string>
     <string name="edit_akun">Edit Akun</string>
+
+    <string name="logout">Log Out</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO(user): replace with your real server client ID -->
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id">550084283271-582b8tg7ib3em7fo1bfpqofksamqjr29.apps.googleusercontent.com</string>
 </resources>

@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
@@ -21,6 +24,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,11 +43,14 @@ public class profile extends AppCompatActivity {
     private CardView btneditprofile, btnriwayat, btnbahasa, btnbantuan;
     private AppCompatImageView profilepict;
     private GoogleSignInClient mgs;
-//    public static String JSON_URL = "http://192.168.100.29/project_kampus/index.php";
+    private AppCompatButton btn_sign_out;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_profile);;
+        StrictMode.ThreadPolicy policy =new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -61,6 +69,7 @@ public class profile extends AppCompatActivity {
         btnriwayat = findViewById(R.id.riwayatpengerjaan);
         btnbahasa = findViewById(R.id.pilihbahas);
         btnbantuan = findViewById(R.id.bantuan);
+        btn_sign_out = findViewById(R.id.btn_sign_out);
 
 //      button edit profile
         btneditprofile.setOnClickListener(new View.OnClickListener() {
@@ -98,12 +107,18 @@ public class profile extends AppCompatActivity {
             }
         });
 
+//        button signout
+        btn_sign_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct != null) {
 
             String personName = acct.getDisplayName();
-//            String personGivenName = acct.getGivenName();
-//            String personFamilyName = acct.getFamilyName();
             String personEmail = acct.getEmail();
             String personId = acct.getId();
             Uri personPhoto = acct.getPhotoUrl();
@@ -114,7 +129,30 @@ public class profile extends AppCompatActivity {
 
             Glide.with(this).load(String.valueOf(personPhoto)).circleCrop().into(profilepict);
         }
+
     }
+
+    private void signOut() {
+        mgs.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // ...
+                        updateUI(null);
+                    }
+                });
+    }
+
+    private void updateUI(@Nullable GoogleSignInAccount account) {
+        if (account == null) {
+            Intent i = new Intent(getApplicationContext(), login.class);
+            startActivity(i);
+        }
+        else {
+            Toast.makeText(this, "GAGAL LOGOUT", Toast.LENGTH_LONG).show();
+        }
+    }
+
 
 //    buat konek db disini
 

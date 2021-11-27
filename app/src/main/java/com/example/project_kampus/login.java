@@ -1,15 +1,15 @@
 package com.example.project_kampus;
 
-import static android.content.ContentValues.TAG;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.project_kampus.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -18,18 +18,19 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
-public class login extends AppCompatActivity {
+public class login extends AppCompatActivity implements View.OnClickListener {
 
-    private SignInButton signInButton;
-    private GoogleSignInClient mgs;
-    private static final int RC_SIGN_IN = 1;
+    GoogleSignInClient mGoogleSignInClient;
+    private static final String TAG = "SignInActivity";
+    private static final int RC_SIGN_IN = 9001;
+
+    //    public static String JSON_URL = "http://192.168.100.29/project_kampus/index.php";
+
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-        signInButton = findViewById(R.id.signinbutton);
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -38,31 +39,15 @@ public class login extends AppCompatActivity {
                 .build();
 
         // Build a GoogleSignInClient with the options specified by gso.
-        mgs = GoogleSignIn.getClient(this, gso);
-
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
 
         // Set the dimensions of the sign-in button.
-        SignInButton signInButton = findViewById(R.id.signinbutton);
+        SignInButton signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
 
-        signInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
+        findViewById(R.id.sign_in_button).setOnClickListener(this);
 
-    }
-
-    private void signIn() {
-        Intent signInIntent = mgs.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
-
-    private void updateUI(GoogleSignInAccount account) {
-        Intent startExistSignIn = new Intent(this, home.class);
-        startActivity(startExistSignIn);
     }
 
     @Override
@@ -72,7 +57,10 @@ public class login extends AppCompatActivity {
         // Check for existing Google Sign In account, if the user is already signed in
         // the GoogleSignInAccount will be non-null.
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
-        updateUI(account);
+        if (account != null) {
+            updateUI(account);
+        }
+
     }
 
     @Override
@@ -102,10 +90,29 @@ public class login extends AppCompatActivity {
         }
     }
 
-//    passing data profile user to the server side
+    private void updateUI(@Nullable GoogleSignInAccount account) {
+        if (account == null) {
+            Toast.makeText(getApplicationContext(), "Login GAGAL", Toast.LENGTH_LONG).show();
+        } else {
+            Intent i = new Intent(getApplicationContext(), profile.class);
+            startActivity(i);
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.sign_in_button:
+                signIn();
+                break;
+        }
+    }
+
+    private void signIn() {
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+
 
 }
-// TODO: 14/11/2021
-//TODO: Perbaiki keystore nya yang tidak ketemu file nya, setelah itu seharusnya sudah bekerja semua (DONE)
-
-// TODO: 15/11/2021: exception throw error code 12500 (DONE)
